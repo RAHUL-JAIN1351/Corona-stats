@@ -1,7 +1,7 @@
 body{
 	margin: 0;
 	padding: 0;
-	background: #364061;
+	background: /*#364061*/#fdf9ff;
 	font-family: 'poppins';
 }
 *{
@@ -42,7 +42,7 @@ header{
 }
 .content .side{
 	width: 30%;
-	background: #445175;
+	background: #f2f2fc/*#445175*/;
 	height: auto;
 	padding: 10px;
 	margin: 15px 12px 15px 15px;
@@ -51,7 +51,7 @@ header{
 }
 .content .main{
 	width: 65%;
-	background: #445175;
+	background: /*#445175*/#f2f2fc;
 	padding: 10px;
 	height: 640px;
 	overflow-y: scroll;
@@ -63,7 +63,7 @@ header{
 	width: inherit;
 }
 table thead{
-	background: #364061;
+	background: /*#364061*/#fdf9ff;
 	color: #f0f8ff;
 	margin: 0;
 	padding: 0;
