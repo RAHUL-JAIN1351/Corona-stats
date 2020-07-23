@@ -116,8 +116,10 @@
 				var nd = data.statewise[0].deltadeaths;
 				var r = data.statewise[0].recovered;
 				var nr = data.statewise[0].deltarecovered;
+                
+                                var comma = new Intl.NumberFormat('en-IN');
 
-			    $("#confirmed_num").html(data.statewise[0].confirmed.toLocaleString('en-IN'));
+			    $("#confirmed_num").html(comma.format(c));
 			    $("#new_c").html("+" + nc.toLocaleString());
 
 			    $("#active_num").html(a.toLocaleString());
@@ -128,6 +130,7 @@
 			    $("#death_num").html(d.toLocaleString());
 			    $("#new_d").html("+" + nd.toLocaleString());
                 
+     
                 for(var i=1;i<data.statewise.length;i++){
                 	var s = data.statewise[i].state;
                 	var c = data.statewise[i].confirmed;
