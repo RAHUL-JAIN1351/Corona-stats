@@ -117,7 +117,7 @@
 				var r = data.statewise[0].recovered;
 				var nr = data.statewise[0].deltarecovered;
 
-			    $("#confirmed_num").html(c.toLocaleString());
+			    $("#confirmed_num").html(data.statewise[0].confirmed.toLocaleString());
 			    $("#new_c").html("+" + nc.toLocaleString());
 
 			    $("#active_num").html(a.toLocaleString());
@@ -292,7 +292,9 @@
 
 
 
-<!--https://api.covid19india.org/data.json
+<!--
+
+https://api.covid19india.org/data.json
 <script>
 	$(document).ready(function(){
 		$.ajax({
