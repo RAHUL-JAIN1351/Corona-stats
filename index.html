@@ -120,15 +120,15 @@
                                 var comma = new Intl.NumberFormat('en-IN');
 
 			    $("#confirmed_num").html(comma.format(c));
-			    $("#new_c").html("+" + nc.toLocaleString());
+			    $("#new_c").html("+" + comma.format(nc) );
 
-			    $("#active_num").html(a.toLocaleString());
+			    $("#active_num").html(comma.format(a));
 
-			    $("#recovered_num").html(r.toLocaleString());
-			    $("#new_r").html("+" + nr.toLocaleString());
+			    $("#recovered_num").html(comma.format(r));
+			    $("#new_r").html("+" + comma.format(nr));
 
-			    $("#death_num").html(d.toLocaleString());
-			    $("#new_d").html("+" + nd.toLocaleString());
+			    $("#death_num").html(comma.format(d));
+			    $("#new_d").html("+" + comma.format(nd));
                 
      
                 for(var i=1;i<data.statewise.length;i++){
