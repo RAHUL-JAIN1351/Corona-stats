@@ -266,8 +266,43 @@
 						            );
 					}
 				}
+				
+				var s1 = ["Gujarat"];
+				var d1 = ["Ahmedabad","Jamnagar","Junagadh","Kheda","Kutch","Narmada","Patan","Porbandar","Rajkot","Surat","Tapi","Vadodara","Valsad"];
 
+				for(var i=0;i<s1.length;i++){
+					$("#tb2").append("<tr><td style='color:yellow;'>"+ s1[i] + "</td></tr>");
+					for(j=0;j<d1.length;j++){
 
+						$("#tb2").append("<tr>"+
+						              "<td>" + d1[j] + "</td>"+
+						              "<td>" + d[s1[i]].districtData[d1[j]].confirmed + "<sup>" + " +" + d[s1[i]].districtData[d1[j]].delta.confirmed + "</sup></td>"+
+						              "<td>" + d[s1[i]].districtData[d1[j]].active + "</td>"+
+						              "<td>" + d[s1[i]].districtData[d1[j]].recovered + "<sup>" + " +" + d[s1[i]].districtData[d1[j]].delta.recovered + "</sup></td>"+
+						              "<td>" + d[s1[i]].districtData[d1[j]].deceased + "<sup>" + " +" + d[s1[i]].districtData[d1[j]].delta.deceased + "</sup></td>"+
+						              "</tr>"
+						            );
+					}
+				}
+				
+				
+				var s1 = ["Haryana"];
+				var d1 = ["Ambala","Bhiwani","Faridabad","Fatehabad","Gurugram","Jhajjar","Karnal","Kurukshetra","Mahendragarh","Panchkula","Panipat","Sonipat","Yamunanagar"];
+
+				for(var i=0;i<s1.length;i++){
+					$("#tb2").append("<tr><td style='color:yellow;'>"+ s1[i] + "</td></tr>");
+					for(j=0;j<d1.length;j++){
+
+						$("#tb2").append("<tr>"+
+						              "<td>" + d1[j] + "</td>"+
+						              "<td>" + d[s1[i]].districtData[d1[j]].confirmed + "<sup>" + " +" + d[s1[i]].districtData[d1[j]].delta.confirmed + "</sup></td>"+
+						              "<td>" + d[s1[i]].districtData[d1[j]].active + "</td>"+
+						              "<td>" + d[s1[i]].districtData[d1[j]].recovered + "<sup>" + " +" + d[s1[i]].districtData[d1[j]].delta.recovered + "</sup></td>"+
+						              "<td>" + d[s1[i]].districtData[d1[j]].deceased + "<sup>" + " +" + d[s1[i]].districtData[d1[j]].delta.deceased + "</sup></td>"+
+						              "</tr>"
+						            );
+					}
+				}
 
 
 
