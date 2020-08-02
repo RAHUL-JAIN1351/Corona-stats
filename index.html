@@ -287,23 +287,7 @@
 				}
 				
 				
-				var s1 = ["Himachal Pradesh"];
-				var d1 = ["Bilaspur","Chamba","Hamirpur","Kangra","Kinnaur","Kullu","Lahaul and Spiti","Mandi","Shimla","Sirmaur","Solan"];
-
-				for(var i=0;i<s1.length;i++){
-					$("#tb2").append("<tr><td style='color:yellow;'>"+ s1[i] + "</td></tr>");
-					for(j=0;j<d1.length;j++){
-
-						$("#tb2").append("<tr>"+
-						              "<td>" + d1[j] + "</td>"+
-						              "<td>" + d[s1[i]].districtData[d1[j]].confirmed + "<sup>" + " +" + d[s1[i]].districtData[d1[j]].delta.confirmed + "</sup></td>"+
-						              "<td>" + d[s1[i]].districtData[d1[j]].active + "</td>"+
-						              "<td>" + d[s1[i]].districtData[d1[j]].recovered + "<sup>" + " +" + d[s1[i]].districtData[d1[j]].delta.recovered + "</sup></td>"+
-						              "<td>" + d[s1[i]].districtData[d1[j]].deceased + "<sup>" + " +" + d[s1[i]].districtData[d1[j]].delta.deceased + "</sup></td>"+
-						              "</tr>"
-						            );
-					}
-				}
+				
 				
 				
 				var s1 = ["Karnataka"];
