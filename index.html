@@ -104,15 +104,15 @@
 				var nr = data.statewise[0].deltarecovered;
 
 			    $("#confirmed_num").html(n.format(c));
-			    $("#new_c").html("+" + nc.toLocaleString());
+			    $("#new_c").html("+" + n.format(nc));
 
 			    $("#active_num").html(n.format(a));
 
 			    $("#recovered_num").html(n.format(r));
-			    $("#new_r").html("+" + nr.toLocaleString());
+			    $("#new_r").html("+" + n.format(nr));
 
 			    $("#death_num").html(n.format(d));
-			    $("#new_d").html("+" + nd.toLocaleString());
+			    $("#new_d").html("+" + n.format(nd));
                 
                 for(var i=1;i<data.statewise.length;i++){
                 	var s = data.statewise[i].state;
