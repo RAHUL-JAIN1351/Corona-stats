@@ -89,7 +89,7 @@
 
 <script>
 	$(document).ready(function(){
-
+		var n = new Intl.NumberFormat('en-IN');
 		$.ajax({
 			url : "https://api.covid19india.org/data.json",
 			type : "GET",
@@ -103,15 +103,15 @@
 				var r = data.statewise[0].recovered;
 				var nr = data.statewise[0].deltarecovered;
 
-			    $("#confirmed_num").html(c.toLocaleString());
+			    $("#confirmed_num").html(n.format(c));
 			    $("#new_c").html("+" + nc.toLocaleString());
 
-			    $("#active_num").html(a.toLocaleString());
+			    $("#active_num").html(n.format(a));
 
-			    $("#recovered_num").html(r.toLocaleString());
+			    $("#recovered_num").html(n.format(r));
 			    $("#new_r").html("+" + nr.toLocaleString());
 
-			    $("#death_num").html(d.toLocaleString());
+			    $("#death_num").html(n.format(d));
 			    $("#new_d").html("+" + nd.toLocaleString());
                 
                 for(var i=1;i<data.statewise.length;i++){
